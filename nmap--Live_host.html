@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Live host</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Live host</h1><br/><br /><br /><table class="table"><tr><th>Scan Type</th><th>Example Command</th></tr><tr><td>ARP Scan</td><td>sudo nmap -PR -sn MACHINE_IP/24</td></tr><tr><td>ICMP Echo Scan</td><td>sudo nmap -PE -sn MACHINE_IP/24</td></tr><tr><td>ICMP Timestamp Scan</td><td>sudo nmap -PP -sn MACHINE_IP/24</td></tr><tr><td>ICMP Address Mask Scan</td><td>sudo nmap -PM -sn MACHINE_IP/24</td></tr><tr><td>TCP SYN Ping Scan</td><td>sudo nmap -PS22,80,443 -sn MACHINE_IP/30</td></tr><tr><td>TCP ACK Ping Scan</td><td>sudo nmap -PA22,80,443 -sn MACHINE_IP/30</td></tr><tr><td>UDP Ping Scan</td><td>sudo nmap -PU53,161,162 -sn MACHINE_IP/30</td></tr></table><br /><br /><br />Remember to add <code>-sn</code> if you are only interested in host discovery without port-scanning. Omitting     <code>-sn</code> will let Nmap default to port-scanning the live hosts.<br /><br /> <br /><table class="table"><tr><th>Option</th><th>Purpose</th></tr><tr><td>-n</td><td>no DNS lookup</td></tr><tr><td>-R</td><td>reverse-DNS lookup for all hosts</td></tr><tr><td>-sn</td><td>host discovery only</td></tr></table><br /></div></body></html>
