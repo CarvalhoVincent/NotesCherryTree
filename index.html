@@ -17,6 +17,7 @@
 <li class='leaf'><a href='#' onclick="changeFrame('Hydra--Hydra--commande.html')">Hydra--commande</a></li>
 <li class='leaf'><a href='#' onclick="changeFrame('Hydra--brute_force.html')">brute force</a></li>
 </ul>
+<li class='leaf'><a href='#' onclick="changeFrame('Intallation_TAR.html')">Intallation TAR</a></li>
 <li><button onclick='toggleSubTree(this)'>-</button> <a href='#' onclick="changeFrame('nmap.html')">nmap</a></li><ul class='subtree'>
 <li class='leaf'><a href='#' onclick="changeFrame('nmap--nmap--Live_host.html')">nmap--Live_host</a></li>
 <li class='leaf'><a href='#' onclick="changeFrame('nmap--nmap--Post_port_scan.html')">nmap--Post_port_scan</a></li>
@@ -33,7 +34,18 @@
 <li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Windows--Abusing_Vulnerable_Software.html')">Abusing Vulnerable Software</a></li>
 <li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Windows--Tools.html')">Tools</a></li>
 </ul>
-<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux.html')">Linux</a></li>
+<li><button onclick='toggleSubTree(this)'>-</button> <a href='#' onclick="changeFrame('Privilege_escalation--Linux.html')">Linux</a></li><ul class='subtree'>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--Enumeration.html')">Enumeration</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--Sudo.html')">Sudo</a></li>
+<li><button onclick='toggleSubTree(this)'>-</button> <a href='#' onclick="changeFrame('Privilege_escalation--Linux--SUID.html')">SUID</a></li><ul class='subtree'>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--SUID--verification_des_permissions.html')">verification des permissions</a></li>
+</ul>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--Kernel_Version.html')">Kernel Version</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--Capabilities.html')">Capabilities</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--Crontab.html')">Crontab</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--PATH.html')">PATH</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Privilege_escalation--Linux--MFS_Shared_folders.html')">MFS Shared folders</a></li>
+</ul>
 </ul>
 <li class='leaf'><a href='#' onclick="changeFrame('SQLmap.html')">SQLmap</a></li>
 <li class='leaf'><a href='#' onclick="changeFrame('Exposing_services_with_reverse_SSH_tunnels.html')">Exposing services with reverse SSH tunnels</a></li>
@@ -44,6 +56,8 @@
 <li class='leaf'><a href='#' onclick="changeFrame('Divers--SMB_Samba.html')">SMB Samba</a></li>
 <li class='leaf'><a href='#' onclick="changeFrame('Divers--pwnkit_CVE-2021-4034_Linux_PrivEsc.html')">pwnkit CVE-2021-4034 Linux PrivEsc</a></li>
 <li class='leaf'><a href='#' onclick="changeFrame('Divers--joomla.html')">joomla</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Divers--Jenkins.html')">Jenkins</a></li>
+<li class='leaf'><a href='#' onclick="changeFrame('Divers--Docker.html')">Docker</a></li>
 </ul>
 </ul>
 </div>

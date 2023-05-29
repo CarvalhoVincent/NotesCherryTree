@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Docker</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Docker</h1><br/><br />Trouver un fichier qui dit que il y a un docker <br /><br /><br /><br /><br /><br /><br /><a href="https://miro.medium.com/v2/resize:fit:700/1*AwTNwjUxmXuyXyxUFXKQHg.png"><img src="images/34-1.png" alt="images/34-1.png" /></a><br /><br />Jenkins.txtThe  file consist text saying it’s running on specific IP and Port on  localhost. But the IP address is different than out deployed machine, if  we check ifconfig result then we get the clear idea.<br /><a href="https://miro.medium.com/v2/resize:fit:700/1*uZT4zPuQ_BF0Q0gnyB-piQ.png"><img src="images/34-2.png" alt="images/34-2.png" /></a><br /><br />ifconfigAs  you can see, there’s a docker running on target machine with 172 series  IP address, so Jenkins is inside docker running on port 8080. Even if  we try to access that docker IP and Port using our browser it’s not  reachable. So, to access it we are going to use SSH tunneling technique  to forward Jenkins ip:port to our attacker machine’s ip:port. We have  exit all the logins and reverseshell. From attackers (kali linux)  terminal execute below command and type the password which we retrieved  from wp-save.txt file.<br /><a href="https://miro.medium.com/v2/resize:fit:700/1*07OpYTsTGZZI0rnkLiu1RA.png"><img src="images/34-3.png" alt="images/34-3.png" /></a><br /><br />ssh tunnelTo access Jenkins, type localhost:6767 in your browser to access it.<br /></div></body></html>
