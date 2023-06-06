@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>WRITABLE     /etc/shadow</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>WRITABLE     /etc/shadow</h1><br/>The /etc/shadow file contains user password hashes and is usually readable only by the root user.<br />Note that the /etc/shadow file on the VM is world-writable:<br /><br /><code>ls -l /etc/shadow</code><br />Generate a new password hash with a password of your choice:<br /><code>mkpasswd -m sha-512 newpasswordhere</code><br /><br />Edit the /etc/shadow file and replace the original root user&#39;s password hash with the one you just generated.<br />Switch to the root user, using the new password:<br /><code>su root</code><br /><br /></div></body></html>

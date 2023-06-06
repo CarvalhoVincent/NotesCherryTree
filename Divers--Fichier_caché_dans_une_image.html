@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Fichier caché dans une image</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Fichier caché dans une image</h1><br/><br /><br /><em><strong>Binwalk {FILENAME} -e</strong></em><br /><a href="https://hackingeek.com/wp-content/uploads/2022/02/Screenshot_15.jpg"><img src="images/54-1.png" alt="images/54-1.png" /></a><br /> <br />Un dossier _cutie.png.extracted a été créé, je me déplace vers ce dernier. Je vois un fichier zip <em><strong>8702.zip</strong></em>, je vais devoir trouver le mot de passe et pour cela j’utilise <em><strong>zip2john</strong></em> :<br /><em><strong>zip2john 8702.zip &gt; zip.hash</strong></em>   création hash compatible pour <em><strong>JohnTheRipper</strong></em><br />Puis je brute force avec la commande :<br /><em><strong>john 8702.zip zip.hash</strong></em><br /></div></body></html>

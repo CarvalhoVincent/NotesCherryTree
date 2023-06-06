@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>John</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>John</h1><br/><br /><br />pour faire une recherche:<br /><br />exemples:<br /><br />john --wordlist=/home/vincent/hack/wordlists/rockyou.txt analyse.txt<br /><br /><br />john --format=sha-512 --wordlist=/home/vincent/hack/wordlists/rockyou.txt<br /><br />john --format=RAW-SHA512:1c362db832f3f864c8c2fe05f2002a05 --wordlist=/hom<br />e/vincent/hack/wordlists/rockyou.txt back.txt<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><h2>VI) Bruteforce de clé SSH via JohnTheRipper</h2><br />JohnTheRipper est un outil très connu de bruteforce, le soucis, c’est  que lui ne peut pas directement bruteforcer une clé SSH comme ça, il  faut d’abord extraire son hash en utilisant un second petit outil, nommé  <strong>ssh2john</strong> :<br /><br /><h2>Utiliser python2.7 pour eviter l&#39;erreur de base 64</h2><br /><a href="https://notamax.be/wp-content/uploads/2021/01/image-18.png"><img src="images/45-1.png" alt="images/45-1.png" /></a>Comme<br /><br /><br /> on peut le voir, on obtient donc un hash qui va pouvoir être lu par John directement à ce niveau.<br /><a href="https://notamax.be/wp-content/uploads/2021/01/image-19.png"><img src="images/45-2.png" alt="images/45-2.png" /></a>Rien de très compliqué comme commande, on spécifie simplement notre  wordlist, ici on repart avec notre fameux rockyou, et on patiente !<br /></div></body></html>

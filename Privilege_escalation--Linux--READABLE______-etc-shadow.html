@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>READABLE      /etc/shadow</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>READABLE      /etc/shadow</h1><br/><br /><br /><br />The /etc/shadow file contains user password hashes and is usually readable only by the root user.<br />Note that the /etc/shadow file on the VM is world-readable:<br /><code>ls -l /etc/shadow</code><br />View the contents of the /etc/shadow file:<br /><code>cat /etc/shadow</code><br />Each  line of the file represents a user. A user&#39;s password hash (if they  have one) can be found between the first and second colons (:) of each  line.<br />Save the root user&#39;s hash to a file called hash.txt on your  Kali VM and use john the ripper to crack it. You may have to unzip  /usr/share/wordlists/rockyou.txt.gz first and run the command using sudo  depending on your version of Kali:<br /><code>john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt</code><br />Switch to the root user, using the cracked password:<br /><code>su root</code><br /></div></body></html>
