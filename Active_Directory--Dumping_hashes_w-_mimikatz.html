@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Dumping hashes w/ mimikatz</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Dumping hashes w/ mimikatz</h1><br/><h2>Dump Hashes w/ mimikatz -</h2><br />1.) <code>cd Downloads &amp;&amp; mimikatz.exe</code> this will cd into the directory that mimikatz is kept as well as run the mimikatz binary<br /><a href="https://i.imgur.com/qwNK9te.png"><img src="images/77-1.png" alt="images/77-1.png" /></a><br />2.) <code>privilege::debug</code> ensure  that the output is &quot;Privilege &#39;20&#39; ok&quot; - This ensures that you&#39;re  running mimikatz as an administrator; if you don&#39;t run mimikatz as an  administrator, mimikatz will not run properly<br /><a href="https://i.imgur.com/aZjIrU7.png"><img src="images/77-2.png" alt="images/77-2.png" /></a><br />3.) <code>lsadump::lsa /patch</code> Dump those hashes!<br /><a href="https://i.imgur.com/6KnPn03.png"><img src="images/77-3.png" alt="images/77-3.png" /></a><br /><h2>Crack those hashes w/ hashcat</h2>﻿<br />1.) <code>hashcat -m 1000 &lt;hash&gt; rockyou.txt</code>    <br /><a href="https://i.imgur.com/ihEcxFA.png"><img src="images/77-4.png" alt="images/77-4.png" /></a><br />Mimikatz  has many uses along side being a great tool to dump hashes we will  cover another one of those ways of using mimikatz in the next task by  creating a golden ticket with mimikatz<br /></div></body></html>
