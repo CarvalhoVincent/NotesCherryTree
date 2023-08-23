@@ -20,3 +20,6 @@
   * [WRITABLE /etc/shadow](readme/writable-etc-shadow.md)
   * [SQLmap](readme/sqlmap.md)
 * [Page 1](page-1.md)
+* [🐉 Hydra](hydra/README.md)
+  * [Hydra--commande](hydra/hydra-commande.md)
+  * [brute force](hydra/brute-force.md)
