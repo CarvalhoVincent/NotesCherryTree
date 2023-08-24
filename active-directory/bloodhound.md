@@ -8,12 +8,20 @@
 1.) `apt-get install bloodhound`    \
 2.) `neo4j console` - default credentials -> neo4j:neo4j
 
-### Getting loot w/ SharpHound -
+### Getting loot w/ SharpHound -&#x20;
 
-1.) `powershell -ep bypass` same as with PowerView\
-2.) `. .\Downloads\SharpHound.`exe   \
-3.) `Invoke-Bloodhound -CollectionMethod All -Domain CONTROLLER.local -ZipFileName loot.zip`    \
+```bash
+powershell -ep bypass 
+//same as with PowerView
+```
 
+```bash
+. .\Downloads\SharpHound.exe
+```
+
+```powershell
+Invoke-Bloodhound -CollectionMethod All -Domain CONTROLLER.local -ZipFileName loot.zip
+```
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 

