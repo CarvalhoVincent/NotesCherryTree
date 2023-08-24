@@ -16,8 +16,11 @@ Exemple de commande:
 #### $ hydra -l lazie -P hack/wordlists/rockyou.txt 10.10.189.75 imap
 
 Hydra Password Cracking Cheetsheet\
-The following table uses the $ip variable which can be set with the following command:\
-`export ip 10.10.10.1`
+The following table uses the $ip variable which can be set with the following command:
+
+```bash
+export ip 10.10.10.1
+```
 
 | Command                                                                                                                                      | Description                                          |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
