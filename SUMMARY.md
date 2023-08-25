@@ -1,6 +1,8 @@
 # Table of contents
 
-* [🐉 Hydra](README.md)
+* [Cheatsheets](README.md)
+  * [Enumeration services](cheatsheets/enumeration-services.md)
+* [🐉 Hydra](<README (1).md>)
   * [Hydra--commande](hydra/hydra-commande.md)
   * [brute force](hydra/brute-force.md)
 * [Active Directory](active-directory/README.md)
