@@ -1,9 +1,2 @@
 # 🪟 Windows
 
-## Windows
-
-\
-\
-\
-\
-\

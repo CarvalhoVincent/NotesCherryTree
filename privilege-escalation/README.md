@@ -1,5 +1,2 @@
 # 🥷 Privilege Escalation
 
-## Privilege escalation
-
-\
