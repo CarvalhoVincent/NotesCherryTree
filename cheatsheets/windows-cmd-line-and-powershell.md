@@ -52,7 +52,7 @@
 
 ## File & Directory Commands
 
-#### **CMD.exe**
+### **CMD.exe**
 
 | **Command**                                      | **Description**                                                                                                                                                                                           |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -93,7 +93,7 @@
 | `del /A:H <file>`                                | Deletes a file or files with the hidden attribute set.                                                                                                                                                    |
 | `erase <file>`                                   | Deletes a file or files. Interchangeable with `del` command.                                                                                                                                              |
 
-#### **PowerShell**
+### **PowerShell**
 
 | **Command**                                        | **Alias**                                   | **Description**                                                                                         |
 | -------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -130,7 +130,7 @@
 
 ## Find & Filter Content
 
-#### **CMD.exe**
+### **CMD.exe**
 
 | **Command**                           | **Description**                                                                                                 |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -142,7 +142,7 @@
 | `fc <file1> <file2>`                  | Compares two files or sets of files and displays the differences between them.                                  |
 | `sort`                                | Reads input, sorts data, and writes the results to the screen, a file, or another device.                       |
 
-#### **PowerShell**
+### **PowerShell**
 
 | **Command**                                                                                                                                                                                                                       | **Description**                                                                       |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -159,7 +159,7 @@
 
 ## User Commands
 
-#### **CMD.exe**
+### **CMD.exe**
 
 | **Commands**     | **Description**                                                                                                                   |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -171,7 +171,7 @@
 | `net localgroup` | Displays the name of the server and the names of local groups on the computer.                                                    |
 | `net group`      | Displays the name of a server and the names of groups on the server. Only able to be used if the machine is joined to the domain. |
 
-#### **PowerShell**
+### **PowerShell**
 
 | **Commands**                                                                                                                                                                                                                                      | **Description**                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -193,7 +193,7 @@
 
 ## Networking Commands
 
-#### **CMD.exe**
+### **CMD.exe**
 
 | **Command**        | **Description**                                                                                     |
 | ------------------ | --------------------------------------------------------------------------------------------------- |
@@ -208,7 +208,7 @@
 | `netstat -an`      | Display current network connections.                                                                |
 | `nslookup <query>` | Query DNS for a name or address.                                                                    |
 
-#### **PowerShell**
+### **PowerShell**
 
 | **Command**                                                                                      | **Description**                                                                                           |
 | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
@@ -250,7 +250,7 @@
 
 ## Services
 
-#### **CMD.exe**
+### **CMD.exe**
 
 | **Command**                        | **Description**                                                                                                                                  |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -263,7 +263,7 @@
 | `net start`                        | List all `running` services.                                                                                                                     |
 | `wmic service list brief`          | List all services on the system using `WMIC`. Includes information such as: `ExitCode`, `Name`, `ProcessID`, `StartMode`, `State`, and `Status`. |
 
-#### **PowerShell**
+### **PowerShell**
 
 | **Command**                                                                                          | **Description**                                                           |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -322,7 +322,7 @@
 
 ## Windows Registry
 
-#### **Registry Hives**
+### **Registry Hives**
 
 | **Hives**                      | **Description**                                                                                                                                                                                          |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -332,7 +332,7 @@
 | `HKEY_CURRENT_USER` (`HKCU`)   | Value entries here define each user's specific OS and software settings. Roaming profile settings, including user preferences, are stored under HKCU.                                                    |
 | `HKEY_USERS` (`HKU`)           | The local computer's default User profile and current user configuration settings are defined under HKU.                                                                                                 |
 
-#### **Registry Commands**
+### **Registry Commands**
 
 | **Command**                                                                                                                          | **Description**                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
@@ -350,7 +350,7 @@
 
 ## PowerShell Scripting
 
-**PowerShell Extensions**
+### **PowerShell Extensions**
 
 | **Extension** | **Description**                                                                                                                |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------ |
