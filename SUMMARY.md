@@ -1,7 +1,15 @@
 # Table of contents
 
 * [Cheatsheets](README.md)
+  * [Infosec basic tools](cheatsheets/infosec-basic-tools.md)
   * [Enumeration services](cheatsheets/enumeration-services.md)
+  * [Nmap](cheatsheets/nmap.md)
+  * [Webrequests](cheatsheets/webrequests.md)
+  * [Network tcpdump/Wireshark](cheatsheets/network-tcpdump-wireshark.md)
+  * [Windows](cheatsheets/windows.md)
+  * [Windows cmd line & Powershell](cheatsheets/windows-cmd-line-and-powershell.md)
+  * [AD basic](cheatsheets/ad-basic.md)
+  * [AD attackenum](cheatsheets/ad-attackenum.md)
 * [🐉 Hydra](<README (1).md>)
   * [Hydra--commande](hydra/hydra-commande.md)
   * [brute force](hydra/brute-force.md)
