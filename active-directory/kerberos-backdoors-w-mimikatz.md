@@ -10,7 +10,7 @@ This will only be an overview section and will not require you to do anything on
 The skeleton key works by abusing the AS-REQ encrypted timestamps as I said above, the timestamp is encrypted with the users NT hash. The domain controller then tries to decrypt this timestamp with the users NT hash, once a skeleton key is implanted the domain controller tries to decrypt the timestamp using both the user NT hash and the skeleton key NT hash allowing you access to the domain forest.\
 
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Preparing Mimikatz -&#x20;
 
@@ -20,7 +20,7 @@ The skeleton key works by abusing the AS-REQ encrypted timestamps as I said abov
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -31,7 +31,7 @@ The skeleton key works by abusing the AS-REQ encrypted timestamps as I said abov
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

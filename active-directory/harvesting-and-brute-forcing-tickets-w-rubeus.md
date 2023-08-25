@@ -11,7 +11,7 @@ The tool has way too many attacks and features for me to cover all of them so I'
 Rubeus is already compiled and on the target machine.\
 
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 ### Harvesting Tickets w/ Rubeus -&#x20;
 
@@ -20,7 +20,7 @@ Harvesting gathers tickets that are being transferred to the KDC and saves them 
 2.) `Rubeus.exe harvest /interval:30` - This command tells Rubeus to harvest for TGTs every 30 seconds\
 
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Brute-Forcing / Password-Spraying w/ Rubeus -
 
@@ -34,7 +34,7 @@ Before password spraying with Rubeus, you need to add the domain controller doma
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
