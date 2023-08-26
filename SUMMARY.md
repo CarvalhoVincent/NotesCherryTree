@@ -52,3 +52,4 @@
     * [Windows Privileges](privilege-escalation/windows/windows-privileges.md)
     * [Abusing Vulnerable Software](privilege-escalation/windows/abusing-vulnerable-software.md)
     * [Tools](privilege-escalation/windows/tools.md)
+    * [Cheatsheet](privilege-escalation/windows/cheatsheet.md)
