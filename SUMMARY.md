@@ -53,3 +53,5 @@
     * [Abusing Vulnerable Software](privilege-escalation/windows/abusing-vulnerable-software.md)
     * [Tools](privilege-escalation/windows/tools.md)
     * [Cheatsheet](privilege-escalation/windows/cheatsheet.md)
+* [🗃 Divers](divers/README.md)
+  * [Google Dorks](divers/google-dorks.md)
