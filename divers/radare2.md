@@ -123,3 +123,7 @@ Let’s try running the binary with this password. Voila! it works🎉
 We have only scratched the surface with this quickstart tutorial. However, Radare is a Swiss army knife for reversing binaries. It can also do patching, dynamic analysis, etc.
 
 There are tons of variations in disassembling binaries and a lot to learn. Reversing binary is a creative art. Every time I use a dissembler tool I learn something new 😺
+
+
+
+Source: [https://itnext.io/radare2-for-reverse-engineering-part1-eedf0a47b5cc](https://itnext.io/radare2-for-reverse-engineering-part1-eedf0a47b5cc)
