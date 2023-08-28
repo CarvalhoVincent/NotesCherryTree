@@ -55,3 +55,4 @@
     * [Cheatsheet](privilege-escalation/windows/cheatsheet.md)
 * [🗃 Divers](divers/README.md)
   * [Google Dorks](divers/google-dorks.md)
+  * [🩺 Radare2](divers/radare2.md)
