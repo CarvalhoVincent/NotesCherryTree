@@ -56,3 +56,4 @@
 * [🗃 Divers](divers/README.md)
   * [Google Dorks](divers/google-dorks.md)
   * [🩺 Radare2](divers/radare2.md)
+  * [📬 IMAP](divers/imap.md)
