@@ -4,6 +4,22 @@
 
 
 
+```bash
+curl -k 'imaps://10.129.14.128' --user cry0l1t3:1234 -v
+```
+
+
+
+Pour se connecter:
+
+```bash
+openssl s_client -connect 10.129.14.128:imaps
+```
+
+
+
+
+
 **IMAP Commands**
 
 | **Command**                     | **Description**                                                                                               |
