@@ -97,3 +97,5 @@
   * [🔬 Stegano hide extract](divers/stegano-hide-extract.md)
   * [📤 WGET](divers/wget.md)
   * [🚡 Feroxbuster](divers/feroxbuster.md)
+  * [🏓 Multiple ping](divers/multiple-ping.md)
+  * [🟩 Vim](divers/vim.md)
