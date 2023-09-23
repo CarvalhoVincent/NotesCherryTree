@@ -10,6 +10,8 @@
   * [Windows cmd line & Powershell](cheatsheets/windows-cmd-line-and-powershell.md)
   * [AD basic](cheatsheets/ad-basic.md)
   * [AD attackenum](cheatsheets/ad-attackenum.md)
+  * [📰 Information Gathering](cheatsheets/information-gathering.md)
+  * [🛂 List of common ports](cheatsheets/list-of-common-ports.md)
 * [🐉 Hydra](<README (1).md>)
   * [Hydra--commande](hydra/hydra-commande.md)
   * [brute force](hydra/brute-force.md)
