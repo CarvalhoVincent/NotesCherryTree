@@ -83,3 +83,6 @@
   * [🐍 msfvenom](divers/msfvenom.md)
   * [📂 SMB Samba](divers/smb-samba/README.md)
     * [ENUM4Linux](divers/smb-samba/enum4linux.md)
+  * [♟ pwnkit CVE-2021-4034 Linux PrivEsc](divers/pwnkit-cve-2021-4034-linux-privesc.md)
+  * [🖇 joomla](divers/joomla.md)
+  * [🤵♂ Jenkins](divers/jenkins.md)
