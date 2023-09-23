@@ -39,6 +39,8 @@
   * [Firewall evasion](nmap/firewall-evasion.md)
   * [Export html](nmap/export-html.md)
 * [🔎 TCP dump](tcp-dump.md)
+* [🌐 Réseau](reseau.md)
+* [🐚 Windows\_shell](windows\_shell.md)
 * [🥷 Privilege Escalation](privilege-escalation/README.md)
   * [🐧 Linux](privilege-escalation/linux/README.md)
     * [🔎 Enumeration](privilege-escalation/linux/enumeration.md)
