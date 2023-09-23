@@ -1,4 +1,4 @@
-# Cheatsheet
+# 🆘 Cheatsheet
 
 ## Windows - Privilege Escalation
 

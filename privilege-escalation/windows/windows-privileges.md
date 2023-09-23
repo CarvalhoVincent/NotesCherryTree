@@ -1,4 +1,4 @@
-# Windows Privileges
+# 👸 Windows Privileges
 
 View all the privileges using whoami /priv
 
