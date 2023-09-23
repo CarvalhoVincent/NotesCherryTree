@@ -100,3 +100,4 @@
   * [🏓 Multiple ping](divers/multiple-ping.md)
   * [🟩 Vim](divers/vim.md)
   * [📦 Libraries](divers/libraries.md)
+  * [☎ Responder](divers/responder.md)
