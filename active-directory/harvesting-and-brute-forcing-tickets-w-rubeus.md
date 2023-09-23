@@ -11,7 +11,7 @@ The tool has way too many attacks and features for me to cover all of them so I'
 Rubeus is already compiled and on the target machine.\
 
 
-![](<../.gitbook/assets/image (4) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 ### Harvesting Tickets w/ Rubeus -&#x20;
 

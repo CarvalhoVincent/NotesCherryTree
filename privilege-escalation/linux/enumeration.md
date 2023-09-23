@@ -43,7 +43,7 @@ The `env` command will show environmental variables.
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -62,7 +62,7 @@ While looking for potential privilege escalation vectors, please remember to alw
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -74,7 +74,7 @@ It is worth remembering that the `id` command can also be used to obtain the sam
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -84,7 +84,7 @@ Reading the `/etc/passwd` file can be an easy way to discover users on the syste
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

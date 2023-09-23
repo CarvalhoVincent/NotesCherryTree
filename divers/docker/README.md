@@ -4,7 +4,7 @@ Trouver un fichier qui dit que il y a un docker
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -13,7 +13,7 @@ Jenkins.txt The file consist text saying it’s running on specific IP and Port 
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -22,7 +22,7 @@ ifconfig As you can see, there’s a docker running on target machine with 172 s
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

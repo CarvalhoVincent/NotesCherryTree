@@ -8,7 +8,7 @@ While we can spin up multiple containers or “microservices” individually and
 
 This illustration shows how containers are deployed together using Docker Compose Vs. Docker:
 
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Before we demonstrate Docker Compose, let’s cover the fundamentals of using Docker Compose.\
 1\. We need Docker Compose installed (it does not come with Docker by default). Installing it is out of scope for this room, as it changes depending on your operating system and other factors. You can check out the installation documentation [here](https://docs.docker.com/compose/install/).
@@ -39,7 +39,7 @@ Now, we could manually run the two containers via the following:\
 2\. Running the Apache2 webserver container: `docker run -p 80:80 --name webserver --net ecommerce webserver`\
 3\. Running the MySQL Database server: `docker run --name database --net ecommerce webserver`
 
-
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 _An illustration shows two containers running independently of each other and is **unable** to communicate with one another._\
 …but do we want to do this every time? Or what if we decide to scale up and get many web servers involved? Do we want to do this for every container, every time? I certainly don’t.\
@@ -48,6 +48,10 @@ Instead, we can use Docker Compose via `docker-compose up` to run these containe
 2\. These two containers are networked together, so we don’t need to go about configuring the network.\
 3\. Extremely portable. We can share our _docker-compose.yml_ file with someone else, and they can get the setup working precisely the same without understanding how the containers work individually.\
 4\. Easy to maintain and change. We don’t have to worry about specific containers using (perhaps outdated) images.\
+
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 \
 _An illustration showing two containers deployed as a combined service. These two containers **can** communicate with one another._
 
@@ -76,24 +80,24 @@ With that said, let’s look at our first docker-compose.yml file. This _docker-
 5\. Our directory listing looks like the following:\
 6\. docker-compose.yml\
 7\. web/Dockerfile\
-Here is what our docker-compose.yml file would look like (as a reminder, it is essential to pay attention to the indentation):\
-`version: '3.3'`\
-`services:`\
-`web:`\
-`build: ./web`\
-`networks:`\
-`- ecommerce`\
-`ports:`\
-`- '80:80'`
+Here is what our docker-compose.yml file would look like (as a reminder, it is essential to pay attention to the indentation):
 
-`database:`\
-`image: mysql:latest`\
-`networks:`\
-`- ecommerce`\
-`environment:`\
-`- MYSQL_DATABASE=ecommerce`\
-`- MYSQL_USERNAME=root`\
-`- MYSQL_ROOT_PASSWORD=helloword`
-
-`networks:`\
-`ecommerce:`
+<pre class="language-yaml"><code class="lang-yaml">version: '3.3'
+services:
+    web:
+<strong>        build: ./web
+</strong>        networks:
+            - ecommerce
+        ports:
+            - '80:80'
+    database:
+        image: mysql:latest
+        networks:
+            - ecommerce
+        environment:
+            - MYSQL_DATABASE=ecommerce
+            - MYSQL_USERNAME=root
+            - MYSQL_ROOT_PASSWORD=helloword
+networks:
+    ecommerce:
+</code></pre>
