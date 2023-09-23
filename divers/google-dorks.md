@@ -1,4 +1,4 @@
-# Google Dorks
+# 🎇 Google Dorks
 
 A few common terms we can search and combine include:
 
