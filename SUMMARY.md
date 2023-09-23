@@ -92,3 +92,5 @@
     * [Dockerfiles](divers/docker/dockerfiles.md)
     * [Docker Compose](divers/docker/docker-compose.md)
     * [Docker Socket](divers/docker/docker-socket.md)
+  * [🖼 Fichier caché dans une image](divers/fichier-cache-dans-une-image.md)
+  * [📂 SCP Copy](divers/scp-copy.md)
