@@ -10,7 +10,7 @@ ssh -L 1234:localhost:5432 christine@{target_IP}
 
 <div align="left">
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
