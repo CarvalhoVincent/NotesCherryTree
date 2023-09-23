@@ -43,15 +43,9 @@ To be able to copy files, you must have at least read permissions on the source 
 Be careful when copying files that share the same name and location on both systems, `scp` will overwrite files without warning.\
 When transferring large files, it is recommended to run the `scp` command inside a [screen](https://linuxize.com/post/how-to-use-linux-screen/) or [tmux](https://linuxize.com/post/getting-started-with-tmux/) session.
 
-### Copy Files and Directories Between Two Systems with
+### Copy Files and Directories Between Two Systems with `scp`
 
-### `scp`
-
-#### Copy a Local File to a Remote System with the
-
-#### `scp`
-
-#### Command
+### Copy a Local File to a Remote System with the`scp`Command
 
 To copy a file from a local to a remote system run the following command:
 
@@ -82,11 +76,7 @@ To copy a directory from a local to remote system, use the `-r` option:
 scp -r /local/directory remote_username@10.10.0.2:/remote/directory
 ```
 
-#### Copy a Remote File to a Local System using the
-
-#### `scp`
-
-#### Command
+### Copy a Remote File to a Local System using the`scp`Command
 
 To copy a file from a remote to a local system, use the remote location as a source and local location as the destination.\
 For example to copy a file named `file.txt` from a remote server with IP `10.10.0.2` run the following command:
@@ -97,11 +87,7 @@ scp remote_username@10.10.0.2:/remote/file.txt /local/directory
 
 If you haven’t set a [passwordless SSH login](https://linuxize.com/post/how-to-setup-passwordless-ssh-login/) to the remote machine, you will be asked to enter the user password.
 
-#### Copy a File Between Two Remote Systems using the
-
-#### `scp`
-
-#### Command
+### Copy a File Between Two Remote Systems using the`scp`Command
 
 Unlike [rsync](https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/) , when using `scp` you don’t have to log in to one of the servers to transfer files from one to another remote machine.\
 The following command will copy the file `/files/file.txt` from the remote host `host1.com` to the directory `/files` on the remote host `host2.com`.
