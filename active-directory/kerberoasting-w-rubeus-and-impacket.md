@@ -16,7 +16,7 @@ I have already taken the time to put Rubeus on the machine for you, it is locate
 2.) `Rubeus.exe kerberoast` This will dump the Kerberos hash of any kerberoastable users    \
 
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 copy the hash onto your attacker machine and put it into a .txt file so we can crack it with hashcat\

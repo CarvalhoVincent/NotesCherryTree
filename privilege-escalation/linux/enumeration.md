@@ -33,7 +33,7 @@ The “ps” command provides a few useful options.\
 ◇ `ps -A`: View all running processes\
 ◇ `ps axjf`: View process tree (see the tree formation until `ps axjf` is run below)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ◇ `ps aux`: The `aux` option will show processes for all users (a), display the user that launched the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux command output, we can have a better understanding of the system and potential vulnerabilities.
 
@@ -43,7 +43,7 @@ The `env` command will show environmental variables.
 
 <div data-full-width="true">
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -62,7 +62,7 @@ While looking for potential privilege escalation vectors, please remember to alw
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -74,7 +74,7 @@ It is worth remembering that the `id` command can also be used to obtain the sam
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -84,7 +84,7 @@ Reading the `/etc/passwd` file can be an easy way to discover users on the syste
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -92,7 +92,7 @@ While the output can be long and a bit intimidating, it can easily be cut and co
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -100,7 +100,7 @@ Remember that this will return all users, some of which are system or service us
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -112,13 +112,13 @@ Looking at earlier commands with the `history` command can give us some idea abo
 
 The target system may be a pivoting point to another network. The `ifconfig` command will give us information about the network interfaces of the system. The example below shows the target system has three interfaces (eth0, tun0, and tun1). Our attacking machine can reach the eth0 interface but can not directly access the two other networks.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 This can be confirmed using the `ip route` command to see which network routes exist.
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -132,7 +132,7 @@ Following an initial check for existing interfaces and network routes, it is wor
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -140,17 +140,17 @@ Following an initial check for existing interfaces and network routes, it is wor
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 ◇ `netstat -tp`: list connections with the service name and PIDinformation.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 This can also be used with the `-l` option to list listening ports (below)
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can see the “PID/Program name” column is empty as this process is owned by another user.\
 Below is the same command run with root privileges and reveals this information as 2641/nc (netcat)
