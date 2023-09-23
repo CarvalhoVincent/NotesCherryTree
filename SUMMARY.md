@@ -99,3 +99,4 @@
   * [🚡 Feroxbuster](divers/feroxbuster.md)
   * [🏓 Multiple ping](divers/multiple-ping.md)
   * [🟩 Vim](divers/vim.md)
+  * [📦 Libraries](divers/libraries.md)
