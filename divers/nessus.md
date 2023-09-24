@@ -104,11 +104,15 @@ Nessus gives us the option to create scan policies. Essentially these are custom
 
 To create a scan policy, we can click on the `New Policy` button in the top right, and we will be presented with the list of pre-configured scans. We can choose a scan, such as the `Basic Network Scan`, then customize it, or we can create our own. We will choose `Advanced Scan` to create a fully customized scan with no pre-configured recommendations built-in.
 
-After choosing the scan type as our base, we can give the scan policy a name and a description if needed: ![image](https://academy.hackthebox.com/storage/modules/108/nessus/policy.png)
+After choosing the scan type as our base, we can give the scan policy a name and a description if needed:&#x20;
+
+<figure><img src="https://academy.hackthebox.com/storage/modules/108/nessus/policy.png" alt=""><figcaption></figcaption></figure>
 
 From here, we can configure settings, add in any necessary credentials, and specify any compliance standards to run the scan against. We can also choose to enable or disable entire [plugin](https://docs.tenable.com/nessus/Content/Plugins.htm) families or individual plugins.
 
-Once we have finished customizing the scan, we can click on `Save`, and the newly created policy will appear in the polices list. From here on, when we go to create a new scan, there will be a new tab named `User Defined` under `Scan Templates` that will show all of our custom scan policies: ![image](https://academy.hackthebox.com/storage/modules/108/nessus/htb\_policydefined.png)
+Once we have finished customizing the scan, we can click on `Save`, and the newly created policy will appear in the polices list. From here on, when we go to create a new scan, there will be a new tab named `User Defined` under `Scan Templates` that will show all of our custom scan policies:&#x20;
+
+<figure><img src="https://academy.hackthebox.com/storage/modules/108/nessus/htb_policydefined.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
