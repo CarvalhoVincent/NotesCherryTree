@@ -15,6 +15,7 @@
   * [🛂 List of common ports](cheatsheets/list-of-common-ports.md)
   * [💲 Shell & payload](cheatsheets/shell-and-payload.md)
   * [Ⓜ Metasploit](cheatsheets/metasploit.md)
+  * [🔑 Password attack](cheatsheets/password-attack.md)
 * [🐉 Hydra](<README (1).md>)
   * [Hydra--commande](hydra/hydra-commande.md)
   * [brute force](hydra/brute-force.md)
