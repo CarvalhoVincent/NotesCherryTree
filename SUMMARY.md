@@ -16,6 +16,7 @@
   * [💲 Shell & payload](cheatsheets/shell-and-payload.md)
   * [Ⓜ Metasploit](cheatsheets/metasploit.md)
   * [🔑 Password attack](cheatsheets/password-attack.md)
+  * [🎁 Default creds](cheatsheets/default-creds.md)
 * [🐉 Hydra](<README (1).md>)
   * [Hydra--commande](hydra/hydra-commande.md)
   * [brute force](hydra/brute-force.md)
