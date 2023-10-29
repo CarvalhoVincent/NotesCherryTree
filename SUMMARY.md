@@ -107,3 +107,4 @@
   * [📦 Libraries](divers/libraries.md)
   * [☎ Responder](divers/responder.md)
   * [🔷 Nessus](divers/nessus.md)
+  * [🦧 Mutated Passwords](divers/mutated-passwords.md)
