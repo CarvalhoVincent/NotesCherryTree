@@ -2,7 +2,7 @@
 
 Mimikatz is a very popular and powerful post-exploitation tool most commonly used for dumping user credentials inside of an active directory network however we'll be using mimikatz in order to dump a TGT from LSASS memory\
 This will only be an overview of how the pass the ticket attacks work as THM does not currently support networks but I challenge you to configure this on your own network.\
-You can run this attack on the given machine however you will be escalating from a domain admin to a domain admin because of the way the domain controller is set up.
+You can run this attack on the given machJuL1()\_N3w\_fl@gJuL1()\_N3w\_fl@gine however you will be escalating from a domain admin to a domain admin because of the way the domain controller is set up.
 
 ### Pass the Ticket Overview -
 
@@ -72,3 +72,26 @@ Note that this is only a POC to understand how to pass the ticket and gain domai
 
 Let's talk blue team and how to mitigate these types of attacks. \
 • Don't let your domain admins log onto anything except the domain controller - This is something so simple however a lot of domain admins still log onto low-level computers leaving tickets around that we can use to attack and move laterally with.
+
+
+
+
+
+
+
+## Linux
+
+
+
+Si une machine linux est sur un domaine, le fichier cache est stockée dans:&#x20;
+
+```bash
+/var/lib/sss/db/ccache_INLANEFREIGHT.HTB
+
+il est ensuite possible de faire:
+
+cp /var/lib/sss/db/ccache_INLANEFREIGHT.HTB .
+export KRB5CCNAME=/root/ccache_INLANEFREIGHT.HTB
+klist
+smbclient //dc01/linux01(hostname) -k -no-pass
+```
